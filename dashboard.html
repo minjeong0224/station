@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+<link rel="stylesheet" href="resources/css/common.css">
+<link rel="stylesheet" href="resources/css/style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="resources/js/main.js"></script>
+<!-- 
+	기존 dashbord_section을 content_section으로 교체. / 13라인
+-->
+<body>
+    <div class="nav_section">
+		<nav class="top_nav"> 
+			<div class="left">
+				<div class="logo">CMS</div>
+				<div class="tab">
+					<img src="resources/image/tab_icon.png" alt="검색">
+				</div>
+			</div>
+			<div class="right">
+				<div class="login_name">로그인 아이디</div>
+				<div class="util">
+					<img src="resources/image/login_icon.png" alt="login"></li>
+					<span></span>
+				</div>
+				<div class="popup_logout">
+					<ul>
+						<li>2024.05.01 14:23:45</li>
+						<li></li>
+						<li class="logout">Logout</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<div class="side_nav">
+			<ul>
+				<li><a href="">Dashboard</a></li>
+				<li><a href="">관리자 관리</a></li>
+				<li><a href="">기기 관리</a></li>
+
+				<li><a href="">콘텐츠 관리</a>
+					<span class="arrow"></span>
+					<ul>
+						<li><a href="">XR 콘텐츠</a></li>
+						<li><a href="">VR 콘텐츠</a></li>
+					</ul>
+				</li>
+
+				<li class="active"><a href="">스테이션츠 관리</a>
+					<span class="arrow active"></span>
+					<ul class="active">
+						<li class="active"><a href="">XR 스테이션</a></li>
+						<li><a href="">VR 스테이션</a></li>
+					</ul>
+				</li>
+
+				<li><a href="">배포 관리</a>
+					<span class="arrow"></span>
+					<ul>
+						<li><a href="">XR 배포</a></li>
+						<li><a href="">VR 배포</a></li>
+					</ul>
+				</li>
+
+				<li><a href="">통계</a></li>
+			</ul>
+		</div>
+		
+		<div class="side_nav_mobile">
+			<ul>
+				<li><a href="">Dashboard</a></li>
+				<li><a href="">관리자 관리</a></li>
+				<li><a href="">기기 관리</a></li>
+
+				<li><a href="">콘텐츠 관리</a>
+					<span class="arrow"></span>
+					<ul>
+						<li><a href="">XR 콘텐츠</a></li>
+						<li><a href="">VR 콘텐츠</a></li>
+					</ul>
+				</li>
+
+				<li class="active"><a href="">스테이션츠 관리</a>
+					<span class="arrow active"></span>
+					<ul class="active">
+						<li class="active"><a href="">XR 스테이션</a></li>
+						<li><a href="">VR 스테이션</a></li>
+					</ul>
+				</li>
+
+				<li><a href="">배포 관리</a>
+					<span class="arrow"></span>
+					<ul>
+						<li><a href="">XR 배포</a></li>
+						<li><a href="">VR 배포</a></li>
+					</ul>
+				</li>
+
+				<li><a href="">통계</a></li>
+			</ul>
+		</div>
+		<div class="side_nav_bg"></div>
+	</div>
+
+    <div class="content_section">
+        <div class="charts">
+            <div class="title">
+                대쉬보드
+            </div>
+            <div class="linechart">
+                <div class="chart_L">
+                    <div class="charts_top">
+                        <div class="sub_title">
+                            XR 주간 콘텐츠 이용 현황 
+                        </div>
+                    </div>
+                    <div class="chart_wrapper">
+                    </div>
+                </div>
+        
+                <div class="chart_R">
+                    <div class="charts_top">
+                        <div class="sub_title">
+                            VR 주간 콘텐츠 이용 현황 
+                        </div>
+                    </div>
+                    <div class="chart_wrapper">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="table_con">
+            <div class="table_con_top">
+                <div class="title">
+                    콘텐츠 배포 현황 
+                </div>
+            </div>
+            <div class="table_chart">
+                <div class="left">
+                    <div class="sub_title">
+                        XR 스테이션
+                    </div>
+                    <div class="table_chart_wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>콘텐츠명</th>
+                                    <th>현재버전</th>
+                                    <th>배포버전</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                <tr>
+                                    <th rowspan="3" scope="rowgroup">스테이션1</th>
+                                    <td>콘텐츠1</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠2</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠3</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                
+                                <tr>
+                                    <th rowspan="3" scope="rowgroup">스테이션2</th>
+                                    <td>콘텐츠2</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠5</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠4</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+            
+                                <tr>
+                                    <th rowspan="3" scope="rowgroup">스테이션3</th>
+                                    <td>콘텐츠4</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠3</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠1</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+        
+                                <tr class="hidden">
+                                    <th rowspan="3" scope="rowgroup">스테이션4</th>
+                                    <td>콘텐츠4</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr class="hidden">
+                                    <td>콘텐츠3</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr class="hidden">
+                                    <td>콘텐츠1</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            
+            
+                <div class="right">
+                    <div class="sub_title">
+                        VR 스테이션
+                    </div>
+                    <div class="table_chart_wrapper">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>콘텐츠명</th>
+                                    <th>현재버전</th>
+                                    <th>배포버전</th>
+                                </tr>
+                            </thead>
+                            
+                            <tbody>
+                                
+                                <tr>
+                                    <th rowspan="3" scope="rowgroup">스테이션1</th>
+                                    <td>콘텐츠2</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠5</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠4</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+            
+                                <tr>
+                                    <th rowspan="3" scope="rowgroup">스테이션2</th>
+                                    <td>콘텐츠4</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠3</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠1</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" scope="rowgroup">스테이션3</th>
+                                    <td>콘텐츠4</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠3</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠1</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" scope="rowgroup">스테이션4</th>
+                                    <td>콘텐츠4</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠3</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠1</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <th rowspan="3" scope="rowgroup">스테이션5</th>
+                                    <td>콘텐츠4</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠3</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                                <tr>
+                                    <td>콘텐츠1</td>
+                                    <td>1.1.1</td>
+                                    <td>1.1.1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

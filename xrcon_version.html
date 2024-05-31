@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XR콘텐츠 버전 관리</title>
+</head>
+<link rel="stylesheet" href="resources/css/style.css">
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="resources/js/main.js"></script>
+
+<body>
+    <div class="nav_section">
+        <nav class="top_nav"> 
+            <div class="left">
+                <div class="logo">CMS</div>
+                <div class="tab">
+                    <img src="resources/image/tab_icon.png" alt="검색">
+                </div>
+            </div>
+            <div class="right">
+                <div class="login_name">로그인 아이디</div>
+                <div class="util">
+                    <img src="resources/image/login_icon.png" alt="login"></li>
+                    <span></span>
+                </div>
+                <div class="popup_logout">
+                    <ul>
+                        <li>2024.05.01 14:23:45</li>
+                        <li></li>
+                        <li class="logout">Logout</li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="side_nav">
+            <ul>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">관리자 관리</a></li>
+                <li><a href="">기기 관리</a></li>
+
+                <li><a href="">콘텐츠 관리</a>
+                    <span class="arrow"></span>
+                    <ul>
+                        <li><a href="">XR 콘텐츠</a></li>
+                        <li><a href="">VR 콘텐츠</a></li>
+                    </ul>
+                </li>
+
+                <li class="active"><a href="">스테이션츠 관리</a>
+                    <span class="arrow active"></span>
+                    <ul class="active">
+                        <li class="active"><a href="">XR 스테이션</a></li>
+                        <li><a href="">VR 스테이션</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">배포 관리</a>
+                    <span class="arrow"></span>
+                    <ul>
+                        <li><a href="">XR 배포</a></li>
+                        <li><a href="">VR 배포</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">통계</a></li>
+            </ul>
+        </div>
+        
+        <div class="side_nav_mobile">
+            <ul>
+                <li><a href="">Dashboard</a></li>
+                <li><a href="">관리자 관리</a></li>
+                <li><a href="">기기 관리</a></li>
+
+                <li><a href="">콘텐츠 관리</a>
+                    <span class="arrow"></span>
+                    <ul>
+                        <li><a href="">XR 콘텐츠</a></li>
+                        <li><a href="">VR 콘텐츠</a></li>
+                    </ul>
+                </li>
+
+                <li class="active"><a href="">스테이션츠 관리</a>
+                    <span class="arrow active"></span>
+                    <ul class="active">
+                        <li class="active"><a href="">XR 스테이션</a></li>
+                        <li><a href="">VR 스테이션</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">배포 관리</a>
+                    <span class="arrow"></span>
+                    <ul>
+                        <li><a href="">XR 배포</a></li>
+                        <li><a href="">VR 배포</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="">통계</a></li>
+            </ul>
+        </div>
+        <div class="side_nav_bg"></div>
+    </div>
+
+
+
+    <div class="content_section">
+        <div class="top">
+            <div class="title">콘텐츠 관리 > XR 콘텐츠 -> 콘텐츠 버전 관리</div>
+            <form>
+                <select class="select_box_long">
+                    <option value="0">콘텐츠명</option>
+                    <option value="1">등록자</option>
+                    <option value="2">등록일</option>
+                </select>
+                <div class="search_area">
+                    <input type="button" class="button_admin" name="button_admin" value="등록">
+                    <input type="button" class="button_back" name="button_back" value="돌아가기">
+                </div>
+            </form>
+        </div>
+        <div class="table_xrcon_version_wrapper">
+            <div class="tbl">
+                <table class="table table_min">
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>콘텐츠 이미지</th>
+                            <th>콘텐츠 코드</th>
+                            <th>콘텐츠 명</th>
+                            <th>기기 명</th>
+                            <th>최신 버전</th>
+                            <th>콘텐츠 상태</th>
+                            <th>등록자</th>
+                            <th>등록일</th>
+                            <th>버전 등록</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>2</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>3</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>	
+                        
+                        <tr>
+                            <td>4</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        
+                        <tr>
+                            <td>5</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="pagination">
+            <ul>
+                <li class="prev">&#60;</li>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+                <li>9</li>
+                <li>10</li>
+                <li class="next">&#62;</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="popup_bg"></div>
+    <div class="popup_contetns_version">
+        <div class="pop_container">
+            <div class="top">
+                <span>콘텐츠  등록</span>
+                <span class="hidden">콘텐츠  수정</span>
+                <input type="button" class="popup_close" >
+            </div>
+            <div class="scroll_container">
+                <form>
+                    <div class="text">
+                            <span>콘텐츠 명</span>
+                            <input type="text" maxlength="50">
+                    </div>
+                    <div class="text">
+                            <span>콘텐츠 버전 명</span>
+                            <input type="text" maxlength="50">
+                    </div>
+                    <div class="form_group">
+                        <div class="left">
+                            <span>콘텐츠 버전 파일 <span class="row">(zip 파일)</span></span>
+                            <div class="file">
+                                <input type="text" class="file_input">
+                                <input type="button" value="파일" class="file_button">
+                            </div>
+                        </div>
+                        <div class="right">
+                            <span>콘텐츠 상태</span>
+                            <select  class="select_box">
+                                <option value="0">콘텐츠 상태</option>
+                                <option value="1">번호</option>
+                                <option value="2">아이디</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="popup_button">
+                        <input type="button" value="등록" class="popup_button_re register">
+                        <input type="button" value="수정" class="popup_button_re edit ">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
